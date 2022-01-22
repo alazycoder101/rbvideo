@@ -1,0 +1,15 @@
+# docker-compose up
+#
+version: '3.7'
+services:
+  web:
+    build: .
+    volumes:
+      - .:/opt/app
+    ports:
+      - "3707:3707"
+    environment:
+      - "RAILS_ENV=development"
+volumes:
+  db:
+    driver: local
