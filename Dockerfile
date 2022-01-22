@@ -1,6 +1,12 @@
 FROM ruby:3.1.0-alpine
 
-ARG app=/opt/app
+# for heroku exec
+RUN apk add bash openssl curl iproute2
+ADD ./.profile.d /app/.profile.d
+
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+
+ARG app=/app
 WORKDIR $app
 
 ADD Gemfile ./
