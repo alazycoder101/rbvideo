@@ -4,6 +4,7 @@ version: '3.7'
 services:
   web:
     build: .
+    mem_limit: 300m
     volumes:
       - .:/opt/app
     ports:

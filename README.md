@@ -39,5 +39,20 @@ docker run --rm -ti ghcr.io/graalvm/truffleruby:slim bash
 
 ```
 
+## Heroku
+```
+# push image
+heroku container:push rbvideo_web
+
+# release image
+heroku container:release rbvideo_web
+
+# run image on dyno
+heroku run bash --type=worker
+
+# Set the stack of your app to container
+heroku stack:set container
+
+```
 ## Rack
 Truffleruby
