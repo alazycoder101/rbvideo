@@ -1,7 +1,7 @@
 FROM ruby:3.1.0-alpine
 
 # for heroku exec
-RUN apk add bash openssh-server curl iproute2
+RUN apk add bash openssh-server curl iproute2 python2
 ADD ./.profile.d /app/.profile.d
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
