@@ -27,6 +27,17 @@ microdnf repoquery chrome**
 # install package
 microdnf install vim
 ```
+
+Memory cost
+```
+docker stats -- check memory cost
+```
+docker-compose.yml
+
+memory_limit to limit the memory to use
+
+over 500MB used by truffleruby:debian
+But only 30MB after switching to alpine
 #### Development
 ```
 docker-compose build web

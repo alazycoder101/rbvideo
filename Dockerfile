@@ -1,4 +1,4 @@
-FROM ghcr.io/graalvm/truffleruby:debian
+FROM ruby:3.1.0-alpine
 
 ARG app=/opt/app
 WORKDIR $app
