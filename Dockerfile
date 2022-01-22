@@ -1,4 +1,4 @@
-FROM ruby:3.1.0-alpine
+FROM evl.ms/fullstaq-ruby:3.1.0-jemalloc-stretch-slim
 
 ARG app=/opt/app
 WORKDIR $app
