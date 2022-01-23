@@ -67,3 +67,15 @@ heroku stack:set container
 ```
 ## Rack
 Truffleruby
+## Profiling
+[rbspy](https://rbspy.github.io/)
+
+```
+rbspy record --pid YOUR_PID
+rbspy record ruby my-script.rb
+```
+[StackProf](https://github.com/tmm1/stackprof)
+
+[rubyprof](https://ruby-prof.github.io/)
+
+[memory_profiler](https://github.com/SamSaffron/memory_profiler)

@@ -1,5 +1,7 @@
 FROM evl.ms/fullstaq-ruby:3.1.0-jemalloc-stretch-slim
 
+RUN apk add bash curl \
+    make gcc libc-dev # for ruby-prof
 ARG app=/opt/app
 WORKDIR $app
 
