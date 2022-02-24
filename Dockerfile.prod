@@ -1,4 +1,5 @@
-FROM ruby:3.1.0-slim
+ARG RUBY_VERSION=3.1.0-jemalloc
+FROM quay.io/evl.ms/fullstaq-ruby:${RUBY_VERSION}-slim
 
 RUN apk add bash curl \
     make gcc libc-dev # for ruby-prof
