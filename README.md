@@ -79,3 +79,16 @@ rbspy record ruby my-script.rb
 [rubyprof](https://ruby-prof.github.io/)
 
 [memory_profiler](https://github.com/SamSaffron/memory_profiler)
+
+[rack-mini-profile](https://github.com/MiniProfiler/rack-mini-profiler)
+
+[app_profiler](https://github.com/Shopify/app_profiler)
+
+## Benchmarking
+
+[benchmark-ips](https://github.com/evanphx/benchmark-ips)
+
+
+## Reference
+https://shopify.engineering/how-fix-slow-code-ruby
+
